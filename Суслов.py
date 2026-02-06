@@ -2,7 +2,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
+@app.route('/registration.html')
+def regis():
+    return render_template('registration.html')
 
 @app.route('/')
 def hom():

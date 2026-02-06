@@ -144,3 +144,192 @@ p {
         text-align: center;
     }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fff;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-content {
+    position: relative; /* ← ИЗМЕНЕНО: добавлено для позиционирования ссылки */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 22px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+/* Ссылки в основном контенте */
+.section-link {
+    display: inline-block;
+    margin: 30px 0 10px 0;
+    padding: 12px 24px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #2c3e50;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.section-link:hover {
+    background-color: #2c3e50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Убрали стрелочку у обычных ссылок */
+.section-link::after {
+    content: ""; /* ← ИЗМЕНЕНО: убрали стрелочку */
+}
+
+.section-link:hover::after {
+    margin-left: 0; /* ← ИЗМЕНЕНО: убрали анимацию стрелочки */
+}
+
+.link-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.section-divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 60px 0;
+}
+
+/* Ссылка в шапке */
+.header-link-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+}
+
+.header-section-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #2c3e50;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.header-section-link:hover {
+    background-color: #2c3e50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Убрали стрелочку у ссылки в шапке */
+.header-section-link::after {
+    content: ""; /* ← ИЗМЕНЕНО: убрали стрелочку */
+}
+
+.header-section-link:hover::after {
+    margin-left: 0; /* ← ИЗМЕНЕНО: убрали анимацию стрелочки */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 40px 15px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 30px 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .section-link {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Адаптивность для ссылки в шапке */
+    .header-link-container {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .header-section-link {
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysIQ - Регистрация</title>
+    <link rel="stylesheet" href="/static/reg.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>PhysIQ</h1>
+            <p>Регистрация в образовательной платформе</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Создание аккаунта</h2>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required placeholder="Введите имя пользователя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required placeholder="Введите пароль">
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">Подтвердите пароль:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required placeholder="Повторите пароль">
+            </div>
+
+            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+        </form>
+
+        <div class="login-link">
+            <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+        </div>
+
+        <div class="back-link-container">
+            <a href="http://127.0.0.1:5000" class="back-link">← Вернуться на главную страницу</a>
+        </div>
+    </div>
+</body>
+</html>
